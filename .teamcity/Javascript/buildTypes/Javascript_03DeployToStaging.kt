@@ -28,7 +28,7 @@ object Javascript_03DeployToStaging : BuildType({
         }
     }
 	
-	trigger {
+	triggers {
 		vcs {
 			id = "vcsTrigger"
 		}
