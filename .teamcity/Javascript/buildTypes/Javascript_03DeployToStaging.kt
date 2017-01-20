@@ -1,6 +1,7 @@
 package Javascript.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v10.*
+import jetbrains.buildServer.configs.kotlin.v10.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.v10.triggers.vcs
 
 object Javascript_03DeployToStaging : BuildType({
