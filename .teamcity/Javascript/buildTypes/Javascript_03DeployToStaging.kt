@@ -21,5 +21,9 @@ object Javascript_03DeployToStaging : BuildType({
             snapshot {
             }
         }
+		dependency(Javascript.buildTypes.Javascript_02IE) {
+            snapshot {
+            }
+        }
     }
 })
