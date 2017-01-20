@@ -12,6 +12,17 @@ object Javascript_03DeployToStaging : BuildType({
         root(Javascript.vcsRoots.Javascript_HttpsGithubComG0t4teamcityCourseCards)
 
     }
+	
+	steps {
+		script {
+			name = "IIS Deploy"
+			id = "RUNNER_6"
+			scriptContent = """
+rmdir /S /Q \inetpub\wwwroot
+xcopy /S /I /Y app \inetpub\wwwroot\
+			"""
+		}
+	}
 
     dependencies {
         dependency(Javascript.buildTypes.Javascript_02Chrome) {
