@@ -19,8 +19,8 @@ object Javascript_03DeployToStaging : BuildType({
 			name = "IIS Deploy"
 			id = "RUNNER_6"
 			scriptContent = """
-rmdir /S /Q \inetpub\wwwroot
-xcopy /S /I /Y app \inetpub\wwwroot\
+rmdir /S /Q \inetpub\wwwroot\cardgame
+xcopy /S /I /Y app \inetpub\wwwroot\cardgame\
 			"""
 		}
 	}
