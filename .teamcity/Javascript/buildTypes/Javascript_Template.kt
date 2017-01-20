@@ -11,7 +11,7 @@ object Javascript_Template : Template({
     name = "Template"
 
     vcs {
-        root(Javascript.vcsRoots.Javascript_HttpsGithubComG0t4teamcityCourseCards)
+        root(Javascript.vcsRoots.HttpsGithubComSubas4uTeamcityCourseCards)
 
     }
 
