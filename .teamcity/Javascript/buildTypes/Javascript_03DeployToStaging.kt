@@ -1,6 +1,7 @@
 package Javascript.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v10.*
+import jetbrains.buildServer.configs.kotlin.v10.triggers.vcs
 
 object Javascript_03DeployToStaging : BuildType({
     uuid = "51ccd149-fed2-4b7b-9338-ff630d5e6b09"
@@ -26,4 +27,10 @@ object Javascript_03DeployToStaging : BuildType({
             }
         }
     }
+	
+	trigger {
+		vcs {
+			id = "vcsTrigger"
+		}
+	}
 })
